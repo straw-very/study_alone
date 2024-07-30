@@ -1,1 +1,2 @@
 # study_alone
+-study
