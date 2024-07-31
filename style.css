@@ -1,0 +1,28 @@
+body{
+    font-family: "Poppins",sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b9b9b);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    box-sizing:  border-box;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 2);
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+.form-container{
+    text-align: center;
+}
+.form-header h2 {
+    margin-bottom: 0.5rem;
+    
+}
