@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head> <!-- HTML문서에 대한 정보를 정의하는 영역 -->
+    <meta charset="UTF-8"> <!-- html 문서에서 허용하는 문자 집합을 정의하는 메타데이터 태그-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- 최신 렌더링 엔진-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹코딩독학하는 사이트</title>
+</head>
+<body> <!-- 웹 브라우저에 노출되는 내용을 작성하는 영역-->
+    <h1>제목,주제 나타냄 </h1> <!-- hn 태그는 제목이나 주제를 나타내는 텍스트를 표현할때 사용-->
+    <h2> h1 보다 글씨 작은걸 확인하기</h2> <!-- hn태그에서 n의 숫자가 클수록 글씨크기는 작아짐-->
+    <p>본문 문단</p> <!-- 본문 문단 태그 p-->
+    <p> 한번 줄바꿈을 <br> 해볼까용?</p> <!-- p태그에서 br태그를이용하여 줄바꿈가능-->
+    <ins> 글자 밑에 밑줄</ins> <!-- 글자밑 밑줄은 ins-->
+    <del> 글자에 취소선</del> <!-- 글자에 취소선은 del-->
+    <p>아래첨자 1 <sub>1</sub></p> <!--아래첨자는 sub-->
+    <p>위첨자 1 <sup>1</sup></p><!-- 위첨자는 sup-->
+    <div class="movie">  <!--블럭요소와 인라인요소를 그룹으로 묶을때 div-->
+        <p> 영화소개</p>
+        <p> <span>영화</span>소개하는페이지입니다.</p> <!-- 내부 콘텐츠를 span 태그로 그룹 지을수있다, css로 스타일 적용해야함-->
+    </div>
+    <ul> <!-- ul태그는 비순서형 목록 생성시 사용-->
+        <li> 목록1</li>
+        <li> 목록2</li>
+    </ul>
+    <dl> <!-- dl은 정의형 목록-->
+        <dt> 단어</dt> <!--dt는 용어-->
+        <dd> 설명어쩌구 저쩌구</dd> <!-- dd는 용어설명-->
+    </dl>
+    <a href="#">a링크</a> <!--a는 내부나 외부 링크를 생성함 href 속성은 필수 target(대상이 연결되는 방식), title(링크를 설명할 수 있는 텍스트) 속성은 선택 대상,
+    href 경로 명확하지 않을시 #사용-->
+    <!-- <img src="" alt=""> -->
+    <!-- 이미지 객체를 삽입하고싶을시 img 태그사용-->
+    <!-- src는 삽입하련는 이미지의 경로를 입력하는 속성 이미지 경로는 항상 웹 브러우저에서 실행되는 html 파일의 위치가 기준-->
+    <!-- ./ 는 현재폴더를 ../ 는 상위폴더를 뜻하는 기호-->
+    <!-- alt는 삽입한 이미지 객체를 설명할 수 있는 텍스트를 넣음-->
+    <!-- src와 alt는 필수로 사용하도록 권고함-->
+    <!-- a태그에 img 태그를 넣어 사용시 이미지를 통해 특정 링크로 이동하게 가능-->
+    <p> 여기서 부터 <strong>중요한 의미가 있는 텍스트</strong> 는 strong 을 사용합니다</p> <!-- 텍스트의미 강조시 strong 태그 사용(b태그와 유사)-->
+    <p> 이것도 <em>강조하고싶은데</em></p> <!-- em 또한 강조시 사용하는 태그(i태그와 유사)-->
+    <!-- 폼은 html 에서 사용자와 상호작용해서 정보를 입력받고 서버로 전송하기 위한 양식을 의미-->
+    <form action="서버 url" method="#"> <!-- 폼 양식을 의미하는 태그--><!--action은 전송할 서버의 URL 주소 적기--> 
+        <!--method는 입력받은 값을 서버에 전송할 때 송신 방식--> <!-- 보안이 요구시 post아닐시 get-->
+        <input type="text"> <!-- 아이디와 비밀번호 처럼 입력받는 요소를 생성할때 input 태그 사용-->
+        <!-- input 태그에는 type, name, value 속성이있음-->
+        <!-- type은 종류 name은 이름 value는 초깃값-->
+        <!-- type 속성값: text(한줄 텍스트), password( 비밀번호 입력 요소), tel(전화번호 형식 요소), number(숫자만 입력할 수 있는 요소), url(url주소만 입력 가능 요소)
+         search(검색용 텍스트만 입력 가능 요소), email(이메일만 입력 가능 요소), checkbox(체그박스 입력 가능 요소), radio(라디오버튼 입력 가능 요소)
+         file(파일 업로드 입력 가능 요소), button(버튼 입력 가능 요소), image(이미지로 버튼 요소 생성. src속성 사용, alt 속성 사용안함)
+         hidden(사용자 눈에 보이지 않는 요소 생성), date(날짜 입력 가능 요소), datetime-local(사용자 시간대에 맞는 날짜를 선택할 수 있는 입력 가능 요소)
+         week(날짜 입력 가능 요소), time(시간 입력 가능 요소), range(숫자 범위 입력 가능 요소), color(색상 입력 가능 요소), submit(폼 전송 역할 입력 가능 요소)
+         reset(폼 요소 사용자가 입력한 값을 초기화하는 버튼 요소)-->
+         <!--name 속성은 입력 요소의 이름 작성-->
+         <!-- value 속성은 입력 요소의 초깃값 작성(상황에 따라)-->
+        <label for="user">이름<!-- label 태그는 form 태그 안에서 사용하는 상호작용 요소에 이름을 붙일 때 사용-->
+            <input type="text" id="user"> <!-- label 태그이 for 속성과 상호작용 요소의 id 속성을 같은 값으로 설정: 명시적인 방법-->
+        </label> <!--label 태그에 상호작용 요소를 포함: 암묵적인 방법-->
+    </form>
+    <input type="text"> <!-- 한줄 텍스트를 입력할 수 있는 요소를 생성-->
+    <input type="radio" name="1">
+    <form action="#">
+        <fieldset> <!-- form 태그안에 사용, fieldset 태그를 사용해 그룹 지을 수 있음. fieldset 태그로 그룹을 지을경우 그룹별로 박스 모양 테두리 생김-->
+            <legend>레전드정보</legend> <!-- 테두리가 생겨 그룹지은 요소들은 legend 태그로 이름을 붙일 수 있음-->
+            <p>
+                <label for="userid">아이디</label>
+                <input type="text" id="userid">
+            </p>
+            <p>
+                <label for="desc">내용
+                    <textarea name="desc" id="desc"></textarea> <!-- 여러 줄의 입력 요소를 생성할 때는 textarea 태그 사용-->
+                </label>
+            </p>
+            <p>
+                <label for="city">지역
+                <select name="city" id="city" size="5" multiple>
+                    <optgroup label="서울시">
+                        <option value="강북구">강북구</option>
+                        <option value="강남구" selected>강남구</option>
+                    </optgroup>
+                    <optgroup label="경기도 성남시">
+                        <option value="중원구">중원구</option>
+                    </optgroup>
+                </select>
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend></legend>
+            <h1> TO. 남편</h1>
+            <p>여보~ 오늘 급하게 먼저 출근해야 해서</p>
+            <p>인사도 못 하고 먼저 나가요~</p>
+            <p><br>아침 굶지 말고 냉장고에 있는 반찬</p>
+            <p>전자레인지에 데워서 챙겨 먹고 나가요~!</p>
+            <p><br>그럼 오늘 하루도 힘내고 이따 저녁에 봐요~</p>
+            <p>화이팅~!</p>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <button type="submit">
+                    <img src="facebook.png" alt="페이스북 버튼">
+                </button>
+                <label for="userid">
+                    <input type="text" id="userid" >
+                </label>
+            </legend>
+        </fieldset>
+    </form>
+
+</body>
+</html>
